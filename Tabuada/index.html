@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device.width, initial-scale=1.0">
+    <link rel="style.css" href="style.css"/>
+    <title>Tabuada</title>
+ 
+
+</head>
+
+<body>
+
+<h1> Funções - Tabuada </h1>
+
+<button onclick="mostrarTabuada()"> mostrar tabuada </button>
+<button onclick="limpartabuada()">limpar tabuada</button>
+<div id ="output"> </div>
+<script>
+
+const output = document.getElementById("output")
+
+function mostrarTabuada(){
+
+    let n = parseFloat(prompt("digite um número"))
+
+    let msg = ""
+    for(let i = 0; i <= 10; i++){
+
+        msg += `${n} x  ${i} = ${(n * i)} <br>` 
+    }
+    
+     output.innerHTML = msg
+}
+    //output.innerHTML = "valor qualquer <br> pula linha"
+    //pedir para o usuario digitar o numero
+    // mostrar a tabuada desse numero de 1 a 1000
+    //toda informaçao que vem da interface é string
+
+function limpartabuada(){
+
+    output.innerHTML = ""
+
+
+}
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
